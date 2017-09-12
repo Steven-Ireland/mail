@@ -8,6 +8,7 @@ const port = process.env.PORT || 5252;
 
 app.post('/mail', (req, res) => {
 	console.log(req.body);
+	res.end(200);
 });
 
 
