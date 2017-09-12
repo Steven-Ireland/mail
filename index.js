@@ -3,6 +3,7 @@ const http = require('http').Server(app);
 const bodyParser = require('body-parser');
 
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
 const port = process.env.PORT || 5252;
 
 
